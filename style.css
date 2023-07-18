@@ -3,11 +3,18 @@
  body{
     font-family: 'Poppins', sans-serif;
 font-family: 'Work Sans', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
  }
  .gray-p{
     color: #534C64;
     font-size: 1rem;
  }
+.nav-sec{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
 .max-width{
     max-width: 1140px;
     margin: auto;
@@ -38,6 +45,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+  
 
 }
 .nav-logo{
@@ -77,6 +85,13 @@ nav ul button{
     justify-content: space-between;
     align-items: center;
     flex: 1;
+   
+}
+
+.background-banner{
+    background-image: url("./images/Group 14.png");
+    background-repeat: no-repeat;
+  
 }
 
 .banner-details{
@@ -88,7 +103,7 @@ nav ul button{
     color: #0B0223;
 text-align: center;
 font-family: Work Sans;
-font-size: 3rem;
+font-size: 2rem;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
@@ -98,7 +113,7 @@ margin-bottom: -10px;
 .banner h1, .we-gamers-details h1{
     margin: 0;
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
 font-weight: 800;
 text-transform: uppercase;
 background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -111,7 +126,7 @@ background-clip: text;
     text-align: center;
     font-size: 2rem;
     font-weight: 800;
-text-transform: uppercase;
+
 background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
 background-clip: text;
 -webkit-background-clip: text;
@@ -164,7 +179,8 @@ background-clip: text;
     margin-top: 3rem;
 }
 .funny-gaming-photo{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     gap: 20px;
 }
 .funny-gaming-photo div{
@@ -175,6 +191,7 @@ background-clip: text;
     position: relative;
 }
 .funny-gaming-photo img{
+    position: relative;
     border-radius: 16px;
     width: 100%;
     opacity: 1;
@@ -187,7 +204,9 @@ background-clip: text;
 .funny-gaming-photo div:hover img{
     opacity: 0.6;
     border: 2px solid #F948B2;
-    width: 100%;    
+    width: calc(100% - 5px) ;
+    overflow: hidden;
+       
 }
 .middle {
     position: absolute;
@@ -207,7 +226,7 @@ background-clip: text;
 
 .play-instantly{
     
-    
+    margin-top: 5rem;
     display: flex;
     text-align: end;
     align-items: center;
@@ -270,7 +289,96 @@ background-clip: text;
     text-align: end;
 }
 
+li , button , i  {
+    cursor: pointer;
+}
+/* games section */
+.games{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
+.games div{
+    
+    display: grid;
+    grid-template-columns:30px 1fr;
+    border-radius: 40px;
+    transition: 0.3sec ;
+    color: white;
+    border: none;
+    
+    padding: 10px auto;
+    align-items: center;
+    gap: 1rem;
+    width: 11.5rem;
+    
+}
+.games div img{
+    max-width: 100% ;
+}
+.games div p{
+    font-size: 0.8rem;
+    color: black;
+    display: inline-block;
+}
+
+.games div:hover{
+    border:2px solid #F948B2;
+}
+.games{
+    padding-top: 5rem;
+    gap:3rem;
+
+    padding-bottom: 5rem;
+
+}
+h3{
+    font-size: 2rem;
+}
+/* footer */
+
+
+footer{
+    background: #0B0223;
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.configuration{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .nav-logo h3{
+    font-size: 3rem;
+}
+
+.company{
+    margin-top: 2rem;
+    font-size:3rem;
+}
+.terms-condition{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.60);
+}
+.copy-r8{
+    color: rgba(255, 255, 255, 0.60);
+    margin-bottom: 2rem;
+}
+/* media query */
 @media screen and (max-width:425px) {
    .max-width{
     max-width: 80vw;
@@ -285,11 +393,11 @@ background-clip: text;
    }
 
     .banner h3{
-        font-size:2.5rem; 
+        font-size:2rem; 
         margin-bottom: 10px;     
     }
     .banner h1{
-        font-size: 3.5rem;
+        font-size: 4rem;
     }
     nav{
     flex-direction: column;
@@ -326,13 +434,16 @@ background-clip: text;
     justify-content: center;
    }
    .funny-gaming-photo{
-   flex-direction: column;
+   grid-template-columns: 1fr;
 }
 .funny-gaming-photo div{
     width: 250px;
     margin: auto;
     text-align: center;
     font-size: 1rem;
+}
+.funnyh3{
+    font-size: 2rem;
 }
 .play-instantly{
     margin-top: 3rem;
@@ -359,6 +470,23 @@ background-clip: text;
 }
 .career-article,.career-photo{
     width: 100%;
+}
+
+
+.nav-sec{
+    box-shadow: none;
+}
+
+.terms-condition{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 0;
+    gap: 2rem;
+    font-size: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 
