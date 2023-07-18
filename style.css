@@ -18,6 +18,8 @@ font-family: 'Work Sans', sans-serif;
     color: white;
     border: none;
     padding: 21px 40px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 .btn-primary-blue{
     border-radius: 48px;
@@ -25,6 +27,7 @@ font-family: 'Work Sans', sans-serif;
     color: white;
     border: none;
     padding: 21px 40px;
+    text-transform: uppercase;
 }
 .btn{
     display: flex;
@@ -230,6 +233,44 @@ background-clip: text;
 .play-instantly-details h1{
     font-size: 2rem;
 }
+
+
+/* career */
+.career-sec{
+    background:#F948B2 ;
+}
+.career{
+    margin-top:8rem;
+    display: flex;
+    justify-content:space-between;
+   
+    color: white;
+    flex: 1;
+
+}
+.career-article,.career-photo{
+    width: 50%;
+}
+.career-photo img{
+    width: 100%;
+}
+
+
+.career-types{
+    display: flex;
+    justify-content: space-between;
+}
+.career button{
+    margin-top:2rem;
+}
+.career-types-p1{
+    text-align: start;
+}
+.career-types-p2{
+    text-align: end;
+}
+
+
 @media screen and (max-width:425px) {
    .max-width{
     max-width: 80vw;
@@ -310,6 +351,14 @@ background-clip: text;
 .play-instantly-photo1{
    
     width:300px;
+}
+.career{
+    flex-direction: column;
+    margin-top: 6rem;
+    
+}
+.career-article,.career-photo{
+    width: 100%;
 }
 
 
