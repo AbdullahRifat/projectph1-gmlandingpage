@@ -370,7 +370,7 @@ footer .nav-logo h3{
 
 .company{
     margin-top: 2rem;
-    font-size:3rem;
+    font-size:1.6rem;
 }
 .terms-condition{
     display: flex;
@@ -385,11 +385,17 @@ footer .nav-logo h3{
 }
 /* media query */
 @media screen and (max-width:576px)  {
-    body{
+    .we-gamers-details p{
         
+        text-align: end;
+        width: 200px;
+    }
+    body{
+        padding: 0;
+        margin:0;
     }
    .max-width{
-    max-width: 80vw;
+    
     margin: auto;
    }
    .nav-logo{
@@ -399,13 +405,17 @@ footer .nav-logo h3{
    .btn{
     flex-direction: column;
    }
-
+ .banner,main{
+    padding: 0;
+ }
     .banner h3{
         font-size:2rem; 
-        margin-bottom: 10px;     
+        margin-bottom: 10px;
+        text-align: center;  
     }
     .banner h1{
         font-size: 4rem;
+        text-align: center;
     }
     nav{
     flex-direction: column;
@@ -466,9 +476,12 @@ footer .nav-logo h3{
 }
 .play-instantly-photo{
     position: relative;
-    width:300px;
+    width:250px;
 }
-
+.play-instantly-details{
+    width: 80vw;
+    margin: auto;
+}
 
 .play-instantly-photo1{
    
@@ -478,6 +491,7 @@ footer .nav-logo h3{
 .career{
     flex-direction: column;
     margin-top: 6rem;
+    padding: 1rem;
     
 }
 .career-article,.career-photo{
