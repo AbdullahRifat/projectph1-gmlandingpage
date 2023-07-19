@@ -235,7 +235,7 @@ background-clip: text;
     display: flex;
     text-align: end;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     gap: 200px;
 }
 .play-instantly-photo,.play-instantly-details{
