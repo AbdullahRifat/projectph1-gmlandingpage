@@ -7,12 +7,14 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
  }
+ 
+
  .gray-p{
     color: #534C64;
     font-size: 1rem;
  }
 .nav-sec{
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.055);
 }
 
 .max-width{
@@ -85,6 +87,7 @@ nav ul button{
     justify-content: space-between;
     align-items: center;
     flex: 1;
+    padding: 1.6rem;
    
 }
 
@@ -98,10 +101,11 @@ nav ul button{
    display: flex;
    flex-direction: column;
    text-align: start;
+   
 }
 .banner h3{
     color: #0B0223;
-text-align: center;
+text-align: start;
 font-family: Work Sans;
 font-size: 2rem;
 font-style: normal;
@@ -109,10 +113,11 @@ font-weight: 600;
 line-height: normal;
 text-transform: uppercase;
 margin-bottom: -10px;
+
 }
 .banner h1, .we-gamers-details h1{
     margin: 0;
-    text-align: center;
+    text-align: start;
     font-size: 4rem;
 font-weight: 800;
 text-transform: uppercase;
@@ -203,8 +208,8 @@ background-clip: text;
 /* hover */
 .funny-gaming-photo div:hover img{
     opacity: 0.6;
-    border: 2px solid #F948B2;
-    width: calc(100% - 5px) ;
+   outline: 2px solid #F948B2;
+ 
     overflow: hidden;
        
 }
@@ -326,7 +331,7 @@ li , button , i  {
 }
 
 .games div:hover{
-    border:2px solid #F948B2;
+    outline:2px solid #F948B2;
 }
 .games{
     padding-top: 5rem;
@@ -379,7 +384,10 @@ footer .nav-logo h3{
     margin-bottom: 2rem;
 }
 /* media query */
-@media screen and (max-width:425px) {
+@media screen and (max-width:576px)  {
+    body{
+        min-width: 400px;
+    }
    .max-width{
     max-width: 80vw;
     margin: auto;
@@ -433,6 +441,7 @@ footer .nav-logo h3{
     text-align: center;
     justify-content: center;
    }
+   /* funny gaming  */
    .funny-gaming-photo{
    grid-template-columns: 1fr;
 }
@@ -445,6 +454,8 @@ footer .nav-logo h3{
 .funnyh3{
     font-size: 2rem;
 }
+
+/* play instantly */
 .play-instantly{
     margin-top: 3rem;
     text-align: center;
@@ -463,6 +474,7 @@ footer .nav-logo h3{
    
     width:300px;
 }
+/* career */
 .career{
     flex-direction: column;
     margin-top: 6rem;
@@ -470,6 +482,10 @@ footer .nav-logo h3{
 }
 .career-article,.career-photo{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 
@@ -490,4 +506,70 @@ footer .nav-logo h3{
 }
 
 
+}
+
+/* media query */
+@media screen and (min-width:576px) and (max-width:768px){
+    body{
+        width: 80vw;
+        margin: auto;
+    }
+    /* funny */
+    .nav-sec{
+        box-shadow: none;
+    }
+
+    .funny-gaming-photo{
+
+        grid-template-columns: 1fr 1fr;
+     }
+     .funny-gaming-photo div{
+         width: 250px;
+         margin: auto;
+         text-align: center;
+         font-size: 1rem;
+     }
+     .funnyh3{
+         font-size: 2rem;
+     }
+     /* play instantly */
+     .play-instantly{
+        margin-top: 3rem;
+        padding-bottom: 3rem;
+        text-align: center;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .play-instantly-photo{
+        position: relative;
+        width:350px;
+    }
+    
+    
+    .play-instantly-photo1{
+       
+        width:350px;
+    }
+     /* career */
+    .career{
+        flex-direction: column;
+        margin-top: 6rem;
+        
+    }
+    .career-article,.career-photo{
+        width: 80vw;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .career-types{
+        width: 80vw;
+    }
+
+    /*  */
+    
 }
