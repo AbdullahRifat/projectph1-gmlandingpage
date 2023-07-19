@@ -386,7 +386,7 @@ footer .nav-logo h3{
 /* media query */
 @media screen and (max-width:576px)  {
     body{
-        min-width: 400px;
+        
     }
    .max-width{
     max-width: 80vw;
