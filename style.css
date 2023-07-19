@@ -330,9 +330,15 @@ li , button , i  {
     display: inline-block;
 }
 
-.games div:hover{
+.games div:hover {
     outline:2px solid #F948B2;
+    color: pink;
+    
 }
+.games div:hover .games-name{
+    color: #F948B2;
+}
+
 .games{
     padding-top: 5rem;
     gap:3rem;
@@ -571,9 +577,10 @@ footer .nav-logo h3{
         flex-direction: column;
         margin-top: 6rem;
         
+        
     }
     .career-article,.career-photo{
-        width: 80vw;
+        width: 70vw;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -581,7 +588,8 @@ footer .nav-logo h3{
         
     }
     .career-types{
-        width: 80vw;
+        width:70vw ;
+        padding: 10px;
     }
 
     /*  */
